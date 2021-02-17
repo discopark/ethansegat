@@ -1,2 +1,3 @@
-# pcolinmanikoth
-My Final Website for Web 2
+# EthanSegat
+
+My Final Website for Web 2. - Ethan Segat
