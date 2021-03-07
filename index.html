@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-    
-    <title>Ethan Segat</title>
-  
-  
-    
+    <title>Document</title>
 
     <!-- Favicons -->
 
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicons/apple-touch-icon.png"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -31,7 +31,7 @@
       href="/favicons/safari-pinned-tab.svg"
       color="#5bbad5"
     />
-    <meta name="msapplication-TileColor" content="#010101" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
     <meta name="theme-color" content="#ffffff" />
 
     <link
@@ -39,41 +39,89 @@
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
     <link rel="stylesheet" href="/css/styles.css" />
+
+    <!-- Light Gallery -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css"
+    />
   </head>
+
   <body>
-    <h1>Ethan Segat</h1>
+    <!-- Bio -->
+    <section>
+      <h1>Ethan Segat</h1>
 
-    <img src="/img/me.jpg" alt="P. Colin Manikoth" />
-    </p>
-
-    <h2>Contact</h2>
-    <form
-      name="My Contact Form"
-      method="POST"
-      data-netlify="true"
-      data-netlify-recaptcha="true"
-      action="/thanks.html"
-    >
-      <p>
-        <label>Name: <input type="text" name="name" required /></label>
-      </p>
+      <img src="ethan_segat_499346161.jpg" alt="Ethan Segat Picture" />
 
       <p>
-        <label>Your Email: <input type="email" name="email" required /></label>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+        reprehenderit aliquam dignissimos assumenda corrupti nulla earum sunt
+        non quas eaque vero deleniti laboriosam id perspiciatis tempora,
+        possimus enim. Aliquam, pariatur?
       </p>
+    </section>
 
-      <p>
-        <label>Message: <textarea name="message"></textarea></label>
-      </p>
+    <!-- Portfolio -->
+    <section>
+      <div id="portfolioGallery">
+        <a href="https://picsum.photos/1080">
+          <img src="https://picsum.photos/1080" alt="Placeholder" />
+        </a>
+        <a href="https://picsum.photos/1080">
+          <img src="https://picsum.photos/1080" alt="Placeholder" />
+        </a>
+        <a href="https://picsum.photos/1080">
+          <img src="https://picsum.photos/1080" alt="Placeholder" />
+        </a>
+        <a href="https://picsum.photos/1080">
+          <img src="https://picsum.photos/1080" alt="Placeholder" />
+        </a>
+        <a href="https://picsum.photos/1080">
+          <img src="https://picsum.photos/1080" alt="Placeholder" />
+        </a>
+        <a href="https://picsum.photos/1080">
+          <img src="https://picsum.photos/1080" alt="Placeholder" />
+        </a>
+      </div>
+    </section>
 
-      <p>
-        <div data-netlify-recaptcha="true"></div>
-      </p>
-      
-      <p>
-        <button type="submit">Send</button>
-      </p>
-    </form>
+    <!-- Contact -->
+    <section>
+      <h2>Contact</h2>
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        action="/thanks.html"
+      >
+        <p>
+          <label>Name: <input type="text" name="name" required /></label>
+        </p>
+
+        <p>
+          <label
+            >Your Email: <input type="email" name="email" required
+          /></label>
+        </p>
+
+        <p>
+          <label>Message: <textarea name="message" required></textarea></label>
+        </p>
+
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+    </section>
 
     <script src="/js/scripts.js"></script>
+
+    <!-- Light Gallery -->
+    <script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
+
+    <script type="text/javascript">
+      lightGallery(document.getElementById("portfolioGallery"));
+    </script>
   </body>
+</html>
